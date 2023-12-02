@@ -3,6 +3,8 @@ body {
     display: grid;
     height: 100vh;
     place-items: center;
+    background-color: black; /* Set background color to white */
+    color: white; /* Set text color to white */
 }
 
 .header-container {
@@ -61,5 +63,6 @@ body {
     align-items: center;
     justify-content: center;
     font-size: 48px;
+    color: white; /* Set text color to white */
 }
 /* Timer CSS Ends */

@@ -65,6 +65,9 @@ a 45,45 0 1,0 -90,0
     startTimer();
     function onTimesUp() {
         clearInterval(timerInterval);
+        document.getElementById("base-timer-path-remaining").classList.remove(COLOR_CODES.warning.color, COLOR_CODES.alert.color);
+        document.getElementById("base-timer-path-remaining").classList.add(COLOR_CODES.info.color);
+        new Audio('/assets/bell.mp3').play()        
         try {
             exercise_index++;
             const h2Element = document.querySelector('h2');
